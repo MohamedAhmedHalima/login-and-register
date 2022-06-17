@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "523199656658",
+    "project_id": "multiplesignin-cd7c4",
+    "storage_bucket": "multiplesignin-cd7c4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:523199656658:android:bb9cd1c3ea5b1478c2b30b",
+        "android_client_info": {
+          "package_name": "com.example.logintest"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "523199656658-knjn33qspvrdtvrbnu5779jjp6tvfs4s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBadiyz8u0fCwI59BI4hXdaawmI84NIHWo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "523199656658-knjn33qspvrdtvrbnu5779jjp6tvfs4s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
