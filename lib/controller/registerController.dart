@@ -107,7 +107,7 @@ class Registercontroller extends GetxController {
   Future vrefication() async {
     var url = Uri.parse('https://bennebosmarket.com/api/verify');
     var response = await http.post(url,
-        body: { "user_id": "${user_id}", "verification_code":"${verification_code}"});
+        body: { "user_id": user_id, "verification_code":"${verification_code}"});
     print(response.body);
 
     if (response.statusCode == 200) {

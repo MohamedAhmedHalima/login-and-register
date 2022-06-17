@@ -7,6 +7,7 @@ import 'package:http/http.dart' as http;
 import 'package:logintest/view/loginCard.dart';
 
 import '../constant/snackBare.dart';
+import '../view/Home.dart';
 import '../view/LoginPage.dart';
 import '../view/forgetPassword.dart';
 import '../view/regesterCard.dart';
@@ -51,7 +52,7 @@ class LoginPageController extends GetxController{
     };
     var request = http.Request('POST', Uri.parse('https://bennebosmarket.com/api/reset/password'));
     request.body = json.encode({
-      "email": "{{email}}"
+      "email": "${email.text}"
     });
     request.headers.addAll(headers);
 
@@ -82,6 +83,7 @@ class LoginPageController extends GetxController{
 
     if (response.statusCode == 200) {
       print(await response.stream.bytesToString());
+      Get.to(Home());
     }
     else {
       print(response.reasonPhrase);
